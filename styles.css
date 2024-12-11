@@ -20,8 +20,8 @@
   body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #f2f2f2;
+    background-color: #000000;
   }
   
   header {
@@ -29,9 +29,9 @@
     color: #fff;
     padding: 60px 0;
     text-align: center;
-    background: linear-gradient(90deg, #24232b, #1d2332);
+    background: linear-gradient(90deg, #2b5583, #0d2052);
     background-size: 200% 200%;
-    animation: gradientMove 5s ease infinite;
+    animation: gradientMove 10s ease infinite;
   }
   
   @keyframes gradientMove {
@@ -58,7 +58,7 @@
   }
   
   nav ul li a {
-    color: #fff;
+    color: #dddddd;
     text-decoration: none;
     font-size: 1.1em;
   }
@@ -76,7 +76,7 @@
   .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #b93a71;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -99,11 +99,11 @@
   }
   
   .project-card {
-    background: #fff;
+    background: #1b1b1b;
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(102, 8, 8, 0.1);
     text-align: center;
     opacity: 0;
     transform: translateX(-50px);
@@ -138,7 +138,7 @@
   }
   
   footer {
-    background: #333;
+    background: #393939;
     color: #fff;
     text-align: center;
     padding: 20px 0;
