@@ -18,10 +18,11 @@
   }
 
   body {
+    /* width: 100%; */
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #f2f2f2;
-    background-color: #000000;
+    background-color: #131215;
   }
   
   header {
@@ -29,9 +30,9 @@
     color: #fff;
     padding: 60px 0;
     text-align: center;
-    background: linear-gradient(90deg, #2b5583, #0d2052);
+    /* background: linear-gradient(90deg, #04101d, #0c1b1d);
     background-size: 200% 200%;
-    animation: gradientMove 10s ease infinite;
+    animation: gradientMove 10s ease infinite; */
   }
   
   @keyframes gradientMove {
@@ -56,11 +57,26 @@
     display: inline;
     margin: 0 15px;
   }
+  .mailtome {
+    color:#b93a71
+  }
+  .email-link {
+    color: #007BFF; /* Set your preferred color */
+    text-decoration: none; /* Removes underline */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Makes text bold */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .email-link:hover {
+    color: #0056b3; /* Change color on hover */
+    text-decoration: underline; /* Optionally underline on hover */
+  }
   
   nav ul li a {
-    color: #dddddd;
+    color: #9c9c9c;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   
   .intro h1 {
@@ -80,7 +96,8 @@
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
   
   section {
@@ -88,7 +105,7 @@
   }
   
   .container {
-    width: 80%;
+    width: 500px;
     margin: 0 auto;
   }
   
@@ -104,7 +121,7 @@
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(102, 8, 8, 0.1);
-    text-align: center;
+    text-align: left;
     opacity: 0;
     transform: translateX(-50px);
     animation: slideIn 1s ease forwards;
@@ -127,14 +144,14 @@
   
   .project-card img {
     width: 100%;
-    height: 500px;
+    height: 350px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
   }
   
   .project-card h3 {
-    font-size: 1.5em;
-    margin: 15px 0;
+    font-size: 1.2em;
+    margin: 10px 0;
   }
   
   footer {
@@ -163,6 +180,24 @@
   .btn:hover {
     transform: scale(1.1);
     background-color: #0056b3;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 20px; /* Spacing between icons */
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    width: 30px; /* Adjust size */
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    cursor: pointer;
   }
 
   /* .btn:hover {

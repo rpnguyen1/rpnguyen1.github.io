@@ -17,10 +17,31 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="intro">
-      <h1>Richard Nguyen</h1>
-      <p>Web Developer | Software Engineer | Designer</p>
-      <a href="#projects" class="btn">See My Work</a>
+    <div class="container">
+      <div class="intro">
+        <h1>Richard Nguyen</h1>
+        <p>Web Developer | Software Engineer | Designer</p>
+        <div class="social-links">
+          <a href="https://github.com/rpnguyen1" target="_blank" aria-label="GitHub">
+            <img src="images/github-icon.svg" alt="GitHub Icon" class="icon">
+          </a>
+          <a href="https://www.linkedin.com/in/rpnguyen1/" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin-icon.svg" alt="LinkedIn Icon" class="icon">
+          </a>
+          <a href="mailto:nguyenprichard@gmail.com" aria-label="Email">
+            <img src="images/email-icon.svg" alt="Email Icon" class="icon">
+          </a>
+        </div>
+        <div class="mailtome">
+          <a  href="mailto:nguyenprichard@gmail.com" aria-label="Email" class="email-link">
+            nguyenprichard@gmail.com
+          </a>        
+        </div>        
+      </div>
+
+
+
+      <!-- <a href="#projects" class="btn">See My Work</a> -->
     </div>
   </header>
 
@@ -37,52 +58,48 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="project-card">
-        <img src="images/ZombieScreenShot.PNG" alt="Zombie Game">
+        <img src="images/CredibleCupidReferral.png" alt="CredibleCupid">
+        <h3>CredibleCupid (Gendered Dating WebApp with Trusted Referrals)</h3>
+        <a href="https://github.com/CS-130-Organization/CredibleCupid" class="btn">Github code</a>
+        <a href="https://drive.google.com/file/d/1naY7RglbjM55y1N9kGZe_7fSpxDrRbWf/view?usp=sharing" class="btn">Video Demo/Presentation</a>
+        <p>Designed and developed a trustworthy dating platform emphasizing authentic user profiles and interactions. 
+            Implemented core features, including user login, profile management, photo uploads, and viewing matches, using a full-stack approach with React and Node.js. 
+            Designed UML diagrams (Class, Sequence, State Machine) to align architecture with requirements. 
+            Used Agile methodologies and GitHub Scrum workflows for collaborative development.<br><br>
+            <strong>Technologies: React, Node.js, JavaScript, HTML/CSS, AI Integration, Git, Agile Development</strong><br>
+        </p>
+      </div>
+      <div class="project-card">
+        <img src="images/M16.gif" alt="Zombie Game">
         <h3>Zombie Game</h3>
-        <p>Top Down Zombie shooter made in Unity/C#. Been working on it since 2018. Released a prototype in 2021 that received around 100 downloads and 1000 browser plays in a week. This is where I first learned most of my skills. Currently, I'm attempting to implement online multiplayer and reworking the systems.</p>
-        <p>Unity, C#, Photon.net, Adobe Photoshop, Adobe Premiere, Adobe After Effect</p>
         <a href="https://rekmodus.itch.io/a-zombie-game" class="btn">View Project</a>
+        <p>Top Down Zombie shooter made in Unity/C#. Been working on it since 2018 and released a prototype in 2021. 
+          This is where I first learned most of my skills. Currently, I'm attempting to implement online multiplayer and reworking the systems.</p>
+          <br>
+        <strong>Technologies: Unity, C#, Photon.net, Adobe Photoshop, Adobe Premiere, Adobe After Effect</strong>
       </div>
       <div class="project-card">
         <img src="images/CastleOfShadows.jpeg" alt="3D Horror Game">
         <h3>First Person Horror Game</h3>
-        <p>Collaborated with a team of 3 to develop a 3d horror puzzle game built using Javascript, HTML, GLSL, WebGL, and Blender. It was made for my computer graphics final project. My job was to build the core features and come up with overall idea.<br>
-            Features:<br>
-            - Shadows. 2 pass z buffer. Creates dynamic light depth texture using projection from light<br>
-            - Collision: AABB(Axis-Aligned Bounding Box)<br>
-            - First person controller. Used various matrix transformations to reproduce classic controls<br>
-            - Bump mapping. Faked by adding one line of code to the shader<br>
-            - Flashlight. Made circular based on distance from screen center, combine with shadow shader<br>
-            - Fog - based on distance from camera, exponential fog factor, mix original with black by fog factor<br>
-            - Physics based simulation<br>
-            - Text system - 2d planes in 3d space<br></p>
         <a href="https://github.com/rpnguyen1/Castle-of-Shadows" class="btn">Github code</a>
         <a href="https://rpnguyen1.github.io/Castle-of-Shadows/" class="btn">Playable demo</a>
+        <p>Collaborated with a team of 3 to develop a 3d horror puzzle game built using Javascript, HTML, GLSL, WebGL, and Blender. It was made for my computer graphics final project. My job was to build the core features and come up with overall idea.
+            I applied graphics concepts we learned in class such as matrix transformations and Phong shading to elevate the visual quality of the project. 
+            I used blender and photoshop to make models and textures to achieve the horror aesthetic.<br>
+            <br>
+            <strong>Technologies: Javascript, HTML, GLSL, WebGL, Blender</strong></p>
+
       </div>
       <div class="project-card">
         <img src="images/FPGA.jpeg" alt="FPGA-Based Piano Synthesizer">
         <h3>FPGA-Based Piano Synthesizer</h3>
-        <p>Implemented an FPGA-based Piano Synthesizer using the Basys 3 development board using Verilog and Vivado. It was the final project for Computer Systems Architecture.<br>
-            - Utilize the 15 switches on the Basys 3 to represent musical notes.<br>
-            - Implement a special switch (rightmost switch) to toggle between major and minor scales.<br>
-            - Implement 5 buttons to reroute the switch notes to different corresponding scales.<br>
-            - Use the 7-segment display to show the current key being played.<br>
-            - Generate audio by sending serial data (MIDI Signals) to a Python script that figures out scale, major, and notes from the 8 bits.<br></p>
         <a href="https://github.com/gpham2/music-synthesizer-basys3" class="btn">Github code</a>
+        <p>Designed and implemented a piano synthesizer on the Basys 3 FPGA using Verilog, incorporating Python scripts for audio generation and 
+          scale selection as part of the final project for Computer Systems Architecture. Established seamless communication between the FPGA 
+          and Python scripts through the UART protocol.<br><br>
+          <strong>Technologies: Verilog, Vivado, Python, Basys 3 FPGA</strong></p>
       </div>
-      <div class="project-card">
-        <img src="images/CredibleCupidReferral.png" alt="CredibleCupid">
-        <h3>CredibleCupid (Gendered Dating WebApp with Trusted Referrals)</h3>
-        <p>Designed and developed a trustworthy dating platform emphasizing authentic user profiles and interactions.<br>
-            - Implemented core features, including user login, profile management, photo uploads, and viewing matches, using a full-stack approach with React and Node.js.<br>
-            - Conducted comprehensive requirement analysis, architectural design, and implementation planning as part of structured coursework objectives.<br>
-            - Delivered UML diagrams (Use Case, Class, Sequence), architecture documentation, and UI mockups to align the project with functional and non-functional requirements.<br>
-            - Coordinated team workflows using GitHub for version control, issue tracking, and sprint planning, completing epics and stories in an Agile environment.<br>
-        Technologies: React, Node.js, JavaScript, HTML/CSS, AI Integration, Git, Agile Development<br>
-        </p>
-        <a href="https://github.com/CS-130-Organization/CredibleCupid" class="btn">Github code</a>
-        <a href="https://drive.google.com/file/d/1naY7RglbjM55y1N9kGZe_7fSpxDrRbWf/view?usp=sharing" class="btn">Video Demo/Presentation</a>
-      </div>
+
     </div>
     </div>
   </section>
@@ -97,8 +114,10 @@
     </div>
   </section>
 
-  <footer>
+  <!-- <div class="container">
     <p>&copy; 2024 Richard Nguyen</p>
-  </footer>
+  </div> -->
+  <!-- <footer>
+  </footer> -->
 </body>
 </html>
