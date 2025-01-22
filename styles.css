@@ -200,6 +200,25 @@
     cursor: pointer;
   }
 
+  .corner-image {
+    position: fixed;
+    bottom: 10px; /* Distance from the bottom */
+    right: 10px;  /* Distance from the right */
+    width: 50px;  /* Adjust the size as needed */
+    height: auto;
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+
+  .bottom-image-container {
+    text-align: center; /* Optional: Center the image horizontally */
+    margin-top: 0px; /* Optional: Space between the content and image */
+    margin-bottom: 20px; /* Optional: Space between the content and image */
+  }
+  
+  .bottom-image {
+    width: 50px;  /* Adjust the size as needed */
+    height: auto;
+  }
   /* .btn:hover {
     animation: shake 0.5s ease infinite;
   }
