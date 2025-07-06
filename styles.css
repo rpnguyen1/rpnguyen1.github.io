@@ -216,7 +216,8 @@
   }
   
   .bottom-image {
-    width: 50px;  /* Adjust the size as needed */
+    position: relative;
+    width: 20px;  /* Adjust the size as needed */
     height: auto;
   }
   /* .btn:hover {
