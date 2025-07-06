@@ -220,6 +220,11 @@
     width: 20px;  /* Adjust the size as needed */
     height: auto;
   }
+
+
+  html {
+  scroll-behavior: smooth;
+}
   /* .btn:hover {
     animation: shake 0.5s ease infinite;
   }
